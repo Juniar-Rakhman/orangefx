@@ -1,1 +1,5 @@
-TModel = new Mongo.Collection('models');
+TModel = new SimpleSchema({
+    name: {
+        type: String,
+    }
+});
