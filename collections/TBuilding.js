@@ -1,0 +1,1 @@
+TBuilding = new Mongo.Collection('buildings');
