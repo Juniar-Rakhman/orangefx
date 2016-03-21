@@ -1,11 +1,14 @@
+//TODO: replace label with constants
+
 TCategory = new Mongo.Collection('categories');
 
 Category = new SimpleSchema({
     name: {
-        type: String
+        type: String,
+        label: "Name"
     },
     subCategories: {
-        type: [TSubCategory]
+        type: [SSubCategory]
     }
 });
 

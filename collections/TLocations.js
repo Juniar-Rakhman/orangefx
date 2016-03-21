@@ -1,10 +1,10 @@
-Location = new SimpleSchema({
+SLocation = new SimpleSchema({
     name: {
         type: String,
         label: "Name"
     },
     description: {
         type: String,
-        lable: "Address"
+        label: "Address"
     }
 });

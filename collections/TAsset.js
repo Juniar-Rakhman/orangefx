@@ -2,56 +2,64 @@ TAsset = new Mongo.Collection('assets');
 
 Asset = new SimpleSchema({
     item: {
-        type: Item,
-        label: "Item No: "
+        type: SItem,
+        label: "Item No"
     },
     brand: {
         type: String,
-        label: "Brand: "
+        label: "Brand"
     },
     model: {
         type: String,
-        label: "Label: "
+        label: "Label"
     },
     status: {
         type: Number,
-        label: "Status: "
+        label: "Status"
     },
     manufacturer: {
         type: String,
-        label: "Manufacturer: "
+        label: "Manufacturer"
     },
     condition: {
         type: String,
-        label: "Condition: "
+        label: "Condition"
     },
     purchaseId: {
-        type: String
+        type: String,
+        label: "Purchase Id"
     },
     warranty: {
         type: String,
         label: "Warranty"
     },
     insurance: {
-        type: String
+        type: String,
+        label: "Insurance"
     },
     attachment: {
-        type: String
+        type: String,
+        label: "Attachment"
     },
     borrowing: {
-        type: String
+        type: String,
+        label: "Borrowing"
     },
     repairing: {
-        type: String
+        type: String,
+        label: "Repairing"
     },
     asset_owner: {
-        type: String
+        type: String,
+        label: "Asset Owner"
     },
     account: {
-        type: String
+        type: String,
+        label: "Account"
     },
     location: {
-        type: String
+        type: String,
+        label: "Location"
     },
     modifiedDate: {
         type: Date,
@@ -63,3 +71,5 @@ Asset = new SimpleSchema({
         }
     }
 });
+
+TAsset.attachSchema(Asset);
