@@ -18,6 +18,8 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 check
 reactive-var
 
+twbs:bootstrap
+mrt:bootstrap-3
 kadira:flow-router
 kadira:blaze-layout
 erasaur:meteor-lodash

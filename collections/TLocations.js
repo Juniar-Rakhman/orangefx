@@ -1,4 +1,6 @@
-SLocation = new SimpleSchema({
+TLocation = new Mongo.Collection('Location');
+
+Location = new SimpleSchema({
     name: {
         type: String,
         label: "Name"
@@ -8,3 +10,5 @@ SLocation = new SimpleSchema({
         label: "Address"
     }
 });
+
+TLocation.attachSchema(Location);

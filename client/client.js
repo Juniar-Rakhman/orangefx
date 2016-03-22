@@ -7,5 +7,5 @@ Accounts.onLogin(()=> {
 });
 
 Accounts.onLogout(()=> {
-    FlowRouter.go('home');
+    FlowRouter.go('/');
 });

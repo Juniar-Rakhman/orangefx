@@ -1,4 +1,4 @@
-TAssetUser = new Mongo.Collection('accounts');
+TAccount = new Mongo.Collection('accounts');
 
 Account = new SimpleSchema({
     number: {
@@ -11,4 +11,4 @@ Account = new SimpleSchema({
     }
 });
 
-TAsset.attachSchema(Account);
+TAccount.attachSchema(Account);

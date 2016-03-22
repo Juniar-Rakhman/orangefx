@@ -1,4 +1,151 @@
 <template name="Setup">
-Nothing here yet
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="panel-title">DATA SETUP</div>
+        </div>
+        <!-- nav tabs -->
+        <!--TODO: set it to top navigation bar-->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#comdeptsection" data-toggle="tab">Company</a></li>
+            <li><a href="#categoriesection" data-toggle="tab">Category</a></li>
+            <li><a href="#measurementsection" data-toggle="tab">Measurement | Brand | Model</a></li>
+            <li><a href="#statusection" data-toggle="tab">Status | Condition | Account</a></li>
+            <li><a href="#currencysection" data-toggle="tab">Currency</a></li>
+            <li><a href="#sitesection" data-toggle="tab">Site</a></li>
+            <li><a href="#asusection" data-toggle="tab">Asset User</a></li>
+            <li><a href="#deprecsection" data-toggle="tab">Depreciation</a></li>
+        </ul>
+        <div class="panel-body">
+            <!-- tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="comdeptsection">
+                    <div class="row-fluid">
+                        <div class="col-sm-4">
+                            {{> SetupCompany}}
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="categoriesection">
+                    <div class="row-fluid">
+                        <div class="col-sm-4">
+                            {{> SetupCategory}}
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="statusection">
+                    <div class="row-fluid">
+                        <div class="col-sm-4">
+                            {{> statustemplate}}
+                        </div>
+                        <div class="col-sm-4">
+                            {{> condtemplate}}
+                        </div>
+                        <div class="col-sm-4">
+                            {{> acctemplate}}
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="currencysection">
+                    <div class="row-fluid">
+                        <div class="col-sm-12">
+                            {{> currtemplate}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="sitesection">
+                    <div class="row-fluid">
+                        <div class="col-sm-4">
+                            {{> sitetemplate}}
+                        </div>
+                        <div class="col-sm-4">
+                            {{> bldgtemplate}}
+                        </div>
+                        <div class="col-sm-4">
+                            {{> loctemplate}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="asusection">
+                    {{> asustemplate}}
+                </div>
+
+                <div class="tab-pane" id="deprecsection">
+                    <div class="row-fluid">
+                        <div class="col-sm-4">
+                            {{> dgtemplate}}
+                        </div>
+                        <div class="col-sm-8">
+                            {{> dctemplate}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
+<template name="SetupDepartment">
+    dept
+</template>
+
+<template name="SetupSubCategory">
+    subcat!!
+</template>
+
+<template name="itemtemplate">
+    itemtemplate
+</template>
+
+<template name="meastemplate">
+    meastemplate
+</template>
+
+<template name="brandtemplate">
+    brandtemplate
+</template>
+
+<template name="modeltemplate">
+    modeltemplate
+</template>
+
+<template name="condtemplate">
+    condtemplate
+</template>
+
+<template name="statustemplate">
+    statustemplate
+</template>
+
+<template name="currtemplate">
+    currency
+</template>
+
+<template name="acctemplate">
+    acctemplate
+</template>
+
+<template name="asustemplate">
+    asustemplate
+</template>
+
+<template name="sitetemplate">
+    sitetemplate
+</template>
+
+<template name="bldgtemplate">
+    bldgtemplate
+</template>
+
+<template name="loctemplate">
+    loctemplate
+</template>
+
+<template name="dgtemplate">
+    dgtemplate
+</template>
+
+<template name="dctemplate">
+    dctemplate!!
+</template>
