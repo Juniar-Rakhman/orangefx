@@ -1,8 +1,10 @@
-<template name="Main">
+<template name="Welcome">
     <div id="wrapper">
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             {{> Header }}
-            {{> SideNav}}
+            {{#if currentUser}}
+                {{> SideNav}}
+            {{/if}}
         </nav>
         <div id="page-wrapper">
             <div class="container-fluid">
